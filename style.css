@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+section {
+    max-width: 1440px;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    width: 6rem;
+}
+
+.menu-list {
+    width: 40%;
+    
+}
+ .menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .menu a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.menu a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.image {
+    grid-column: 1/3;
+    grid-row: 1;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.heading {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.heading h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: 'inter', sans-serif;
+}
+
+.paragraf {
+    grid-column: 2;
+    grid-row: 2;
+    margin-right: 30px;
+}
+
+.paragraf p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'inter', sans-serif;
+    line-height: 150%;
+    color: gray;
+}
+
+.paragraf input {
+    margin-top: 50px;
+    height: 4rem;
+    width: 50%;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'inter', sans-serif;
+}
+
+.paragraf input:hover {
+    background-color: black;
+}
+
+.texts {
+    grid-column: 3;
+    grid-row: 1/3;
+    background-color: rgb(1, 1, 24);
+    padding: 30px;
+}
+
+.texts h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-family: 'inter',sans-serif;
+    color: hsl(5, 85%, 63%);
+    line-height: 150%;
+}
+
+.texts a {
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-family: 'inter',sans-serif;
+    color: white;
+    line-height: 250%;
+    text-decoration: none;
+}
+
+.texts a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.texts p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'inter',sans-serif;
+    color: gray;
+    line-height: 250%;
+    letter-spacing: 0.08rem;
+}
+
+hr {
+    margin: 25px 0;
+}
+
+.items {
+    grid-column: 1/4;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 60px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.item-image img {
+    width: 100%;
+}
+
+.item-text h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-family: 'inter',sans-serif;
+    color: rgb(167, 165, 165);
+}
+
+.item-text h4 {
+    margin: 10px 0;
+}
+
+.item-text a {
+    font-size: 1.7rem;
+    text-decoration:none ;
+    font-weight: 600;
+    color: black;
+    font-family: 'inter',sans-serif;
+}
+
+.item-text p {
+    font-size: 1.2rem;
+    text-decoration:none ;
+    font-weight: 400;
+    color: black;
+    font-family: 'inter',sans-serif;
+    letter-spacing: 0.06rem;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width:1200px) {
+    .menu-list {visibility:hidden ;}
+}
+
+@media only screen and (max-width:600px) {
+
+    .menu {
+        margin: 50px 20px 0 20px;
+    }
+
+    .all {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .image {
+        grid-row: 1;
+        grid-column: 1;
+        background-image: url(./assets/images/image-web-3-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-top: 30px;
+        margin-right: 0;
+        height: 100%;
+    }
+
+    .image img {
+        visibility: hidden;
+    }
+
+    .heading {
+        grid-column: 1;
+        margin-top: 50px;
+        grid-row: 2;
+    }
+
+    .paragraf {
+        grid-column: 1;
+        margin-top: 50px;
+        grid-row: 3;
+    }
+
+    .texts {
+        grid-column: 1;
+        margin-top: 50px;
+        grid-row: 4;
+    }
+
+    .items {
+        grid-column: 1;
+        margin-top: 50px;
+        grid-row: 5;
+    }
+
+    .items {
+        display: grid;
+        margin-top: 3
+        50px;
+        grid-template-columns: 1fr;
+    }
+}
